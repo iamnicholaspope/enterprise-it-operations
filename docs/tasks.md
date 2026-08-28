@@ -20,7 +20,8 @@ Requirement relationships are maintained primarily in `docs/requirements-traceab
 - [x] Initialize Git repository when explicitly authorized
 - [x] Create project charter
 - [x] Create detailed business profile
-- [~] Review and approve requirements register
+- [x] Review and approve requirements register
+  - Approval (2026-08-28): Project owner approved the 14-requirement baseline, including the exact `REQ-013` and `REQ-014` wording; baseline approval does not establish implementation or validation.
 - [ ] Maintain authoritative master build roadmap
 - [x] Create risk register
 - [x] Create ADR template
@@ -39,7 +40,8 @@ Requirement relationships are maintained primarily in `docs/requirements-traceab
     - Evidence (2026-08-28): public repository `https://github.com/iamnicholaspope/enterprise-it-operations`; local `main` tracks `origin/main`; initial published baseline verified at commit `1b6677f2da6fa640f2a44076d3b0deeb8699f0da`.
 - [x] Establish testing, evidence, runbook, change, and incident standards ([Issue #1](https://github.com/iamnicholaspope/enterprise-it-operations/issues/1))
   - Approval (2026-08-28): Project owner accepted the implementation and validation results; the five standards and five reserved `000` templates constitute the approved Phase 00 baseline.
-- [~] Verify tasks can be traced to requirements ([Issue #2](https://github.com/iamnicholaspope/enterprise-it-operations/issues/2))
+- [x] Verify tasks can be traced to requirements ([Issue #2](https://github.com/iamnicholaspope/enterprise-it-operations/issues/2))
+  - Approval (2026-08-28): Project owner accepted the traceability audit, reconciliation, and documented workstream classifications; requirement implementation and validation statuses remain unchanged.
 - [x] Create GitHub Project/Kanban board when explicitly authorized
   - Evidence (2026-08-28): public user project `Enterprise IT Operations Lab` (`https://github.com/users/iamnicholaspope/projects/1`) is linked to the repository; Status uses `BACKLOG`, `READY`, `IN PROGRESS`, `TESTING`, and `DONE`; Phase, Requirement, Priority, and Work Type fields and Kanban, Phase Plan, and Current Work views were verified with zero project items.
 - [x] Create initial milestone structure

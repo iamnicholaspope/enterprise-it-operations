@@ -1,5 +1,7 @@
 # Requirements Register
 
+> **Baseline approval:** The project owner approved the current requirements register, including `REQ-013` and `REQ-014`, on 2026-08-28. This accepts the requirements as governance inputs; it does not mean they are implemented or validated. Implementation and validation statuses remain authoritative in this register and `docs/requirements-traceability-matrix.md`.
+
 | ID | Requirement | Priority | Status |
 |---|---|---|---|
 | REQ-001 | Employees must authenticate through centralized identity | Must | Planned |

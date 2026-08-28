@@ -29,7 +29,7 @@ Include likelihood/impact reasoning, security, availability, cost/licensing, and
 
 ## Implementation Plan
 
-1. 
+1. `TBD — add exact implementation steps before approval.`
 
 ## Validation Plan
 

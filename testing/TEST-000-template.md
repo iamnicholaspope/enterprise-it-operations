@@ -26,7 +26,7 @@ Describe systems, versions, relevant configuration baseline, isolation, and synt
 
 ## Procedure
 
-1. 
+1. `TBD — add reproducible test steps before setting status to Ready.`
 
 ## Expected Result
 

@@ -29,7 +29,7 @@ Identify exact targets, safeguards, stopping conditions, and prohibited actions.
 
 ## Procedure
 
-1. 
+1. `TBD — add authorized operational steps before approval.`
 
 ## Verification
 

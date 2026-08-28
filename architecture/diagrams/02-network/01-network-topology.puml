@@ -1,0 +1,17 @@
+@startuml
+title Network Topology
+
+cloud Internet
+node "Firewall / Router\nOPNsense or pfSense" as FW
+rectangle "VLAN 20 - Users" as USERS
+rectangle "VLAN 30 - Servers" as SERVERS
+rectangle "VLAN 50 - Guest" as GUEST
+rectangle "VLAN 60 - Remote VPN" as VPN
+
+Internet --> FW
+FW --> USERS
+FW --> SERVERS
+FW --> GUEST
+FW --> VPN
+
+@enduml

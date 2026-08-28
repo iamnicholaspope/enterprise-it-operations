@@ -1,0 +1,17 @@
+@startuml
+title ServiceNow ITSM Operational Flow
+
+actor Employee
+component "ServiceNow" as SN
+component "Incident" as INC
+component "Problem" as PRB
+component "Change" as CHG
+component "Knowledge" as KB
+
+Employee --> SN
+SN --> INC
+INC --> PRB
+PRB --> CHG
+CHG --> KB
+
+@enduml

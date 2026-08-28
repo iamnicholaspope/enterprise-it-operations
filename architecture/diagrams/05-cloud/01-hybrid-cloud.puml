@@ -1,0 +1,18 @@
+@startuml
+title Hybrid Cloud Architecture
+
+rectangle "On-Prem Lab" {
+  node "DC01" as DC01
+  node "DC02" as DC02
+}
+
+cloud "Microsoft Azure" as AZ
+cloud "Microsoft Entra ID" as ENTRA
+cloud "Microsoft 365" as M365
+
+DC01 --> ENTRA
+DC02 --> ENTRA
+ENTRA --> M365
+ENTRA --> AZ
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+title Backup & Disaster Recovery
+
+node "DC01 / DC02" as AD
+node "CRM Server" as CRM
+database "Backup Repository" as BACKUP
+component "Restore Testing" as TEST
+
+AD --> BACKUP
+CRM --> BACKUP
+BACKUP --> TEST
+
+@enduml

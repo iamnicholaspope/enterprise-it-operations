@@ -1,0 +1,16 @@
+@startuml
+title Business Applications
+
+actor Employee
+component "CRM" as CRM
+component "Microsoft 365" as M365
+component "ServiceNow" as SN
+component "SMTP / IMAP / POP3" as MAIL
+
+Employee --> CRM
+Employee --> M365
+Employee --> SN
+CRM --> MAIL
+SN --> MAIL
+
+@enduml

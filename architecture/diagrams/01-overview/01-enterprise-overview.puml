@@ -1,0 +1,27 @@
+@startuml
+title Enterprise IT Operations - High-Level Overview
+
+skinparam componentStyle rectangle
+
+actor "Office Employees\n21 Users" as Office
+actor "Remote Employees\n5 Users" as Remote
+
+rectangle "Corporate Environment" {
+  component "Windows Server\nAD / DNS / DHCP" as AD
+  component "CRM" as CRM
+  component "ServiceNow ITSM" as SN
+  component "Prometheus" as PROM
+  component "Grafana" as GRAF
+}
+
+cloud "Microsoft 365 / Entra / Intune" as M365
+
+Office --> AD
+Office --> CRM
+Remote --> M365
+Remote --> CRM
+AD --> M365
+PROM --> GRAF
+SN --> AD
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+title Observability Architecture
+
+node "Windows Exporter" as WEXP
+node "Node Exporter" as NEXP
+component "Prometheus" as PROM
+component "Alertmanager" as ALERT
+component "Grafana" as GRAF
+component "Loki" as LOKI
+
+WEXP --> PROM
+NEXP --> PROM
+PROM --> GRAF
+PROM --> ALERT
+LOKI --> GRAF
+
+@enduml

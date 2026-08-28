@@ -1,0 +1,17 @@
+@startuml
+title Security Controls
+
+actor User
+component "Entra ID" as ENTRA
+component "MFA" as MFA
+component "Conditional Access" as CA
+component "Intune Compliance" as INTUNE
+component "Defender" as DEF
+
+User --> ENTRA
+ENTRA --> MFA
+ENTRA --> CA
+CA --> INTUNE
+INTUNE --> DEF
+
+@enduml

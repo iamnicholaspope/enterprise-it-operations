@@ -1,0 +1,115 @@
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary, editor, and local backup files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.bak
+*.backup
+*.orig
+*.rej
+
+# Logs are excluded by default. Intentionally retained evidence must be
+# sanitized, reviewed, and explicitly added under the evidence process.
+*.log
+logs/
+
+# JetBrains / PhpStorm local state (shared project files remain trackable)
+/.idea/workspace.xml
+/.idea/deployment.xml
+/.idea/shelf/
+/.idea/httpRequests/
+/.idea/queries/
+/.idea/dataSources/
+/.idea/dataSources.local.xml
+/.idea/**/workspace.xml
+
+# Visual Studio Code local settings
+/.vscode/
+
+# Common caches and generated build output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+node_modules/
+dist/
+build/
+out/
+target/
+.cache/
+tmp/
+temp/
+
+# Terraform / OpenTofu local state and sensitive artifacts
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Environment and secret-bearing local configuration
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+secrets/
+credentials/
+credentials.json
+service-account*.json
+*.credentials
+*.secret
+*.secrets
+
+# Private keys, key stores, and certificates that can contain private keys
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+
+# Local backup archives and database dumps
+*.dump
+*.sql.gz
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# VM disks, appliances, installation media, and large lab artifacts
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.qcow
+*.qcow2
+*.ova
+*.ovf
+*.iso
+*.img
+*.dmg
+*.snapshot
+*.sav

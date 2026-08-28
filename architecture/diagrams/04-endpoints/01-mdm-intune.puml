@@ -1,0 +1,15 @@
+@startuml
+title Endpoint & Mobile Device Management
+
+cloud "Microsoft Entra ID" as ENTRA
+component "Microsoft Intune" as INTUNE
+node "Windows Laptops" as WIN
+node "iOS / iPadOS" as IOS
+node "Android" as ANDROID
+
+ENTRA --> INTUNE
+INTUNE --> WIN : Policies / Apps / Compliance
+INTUNE --> IOS : MDM / MAM
+INTUNE --> ANDROID : MDM / MAM
+
+@enduml

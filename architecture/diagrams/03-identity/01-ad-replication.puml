@@ -1,0 +1,12 @@
+@startuml
+title Active Directory Replication
+
+node "DC01\nWindows Server\nAD DS + DNS" as DC01
+node "DC02\nWindows Server\nAD DS + DNS" as DC02
+node "CLIENT01\nWindows 11" as C1
+
+DC01 <--> DC02 : AD / DNS Replication
+C1 --> DC01 : Authentication / DNS
+C1 --> DC02 : Failover Authentication / DNS
+
+@enduml

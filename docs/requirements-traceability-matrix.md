@@ -278,6 +278,64 @@ An implementation task marked `[x]` does not by itself validate a requirement. V
 - Git-backed history is available beginning with the authorized Phase 00 baseline commit.
 - Product, network, identity, remote-access, cloud, endpoint, monitoring, backup, and recovery decisions remain open in their designated phases.
 
+## Task-to-Requirement Traceability Audit — 2026-08-28
+
+### Scope Audited
+
+The audit reviewed all 161 finite checkbox tasks in `docs/tasks.md`, all authoritative roadmap phases, REQ-001 through REQ-012, the RTM implementation-task mappings, GitHub Issues #1–#3, and the approved testing, evidence, runbook, change, and incident standards. This was a coverage and consistency audit, not implementation or requirement validation.
+
+### Coverage Result
+
+- All 161 tasks are owned by exactly one Phase 00–20 section.
+- All 21 phase numbers and names appear once, in authoritative roadmap order, with no missing or unauthorized phase.
+- Major roadmap work has task coverage in its corresponding phase. This confirms planned coverage only.
+- REQ-001 through REQ-012 appear exactly once in `docs/requirements.md` and exactly once as RTM records.
+- Every requirement has planned implementation-task coverage, a future test/evidence expectation, and an explicit implementation and validation status in this RTM.
+- Issue #1 maps to the completed standards task and is closed/DONE; Issue #2 maps to the current audit task; Issue #3 maps to future Phase 00 completion validation. No future implementation issue was created by this audit.
+- The approved `TEST-000`, `EVID-000`, `RUN-000`, `CHG-000`, and `INC-000` templates support future links to requirements, risks, phases, ADRs, GitHub issues, tests, evidence, runbooks, changes, and incidents without representing real records.
+
+The task register does not require every checkbox to repeat requirement IDs inline. The RTM's requirement-to-phase/task-group mappings are the primary traceability mechanism; narrow inline references remain useful where already present. Pure administrative/governance tasks may legitimately have no business requirement ID when they maintain the project rather than implement a requirement.
+
+### Requirement Coverage Result
+
+| Requirement | Planned task coverage | Implementation status | Validation status | Known gap |
+|---|---|---|---|---|
+| `REQ-001` | Identity tasks in Phases 02–04, 11, 14, and 16 | Not Started | Not Validated | Architecture, implementation, tests, evidence, and runbooks remain future work. |
+| `REQ-002` | DC01/DC02, replication/failover, client, and recovery tasks in Phases 02–04 and 15 | Not Started | Not Validated | Controllers, failure/recovery tests, evidence, and runbooks do not exist. |
+| `REQ-003` | Network/remote access, cloud identity, endpoint, security, and optional delivery tasks in Phases 01 and 11–14/19 | Not Started | Not Validated | Architecture/platform decisions, implementation, tests, and evidence remain open. |
+| `REQ-004` | Observability/integration/recovery tasks in Phases 07, 08, 14, 15, and 20 | Not Started | Not Validated | Monitoring design, implementation, failure-path tests, and evidence remain open. |
+| `REQ-005` | ITSM/asset, identity, endpoint, remote, security, and automation tasks in Phases 08 and 11–16 | Not Started | Not Validated | Licensing, architecture, workflows, tests, and evidence remain open. |
+| `REQ-006` | ITAM/CMDB, managed-device, and automation tasks in Phases 08, 12, and 16 | Not Started | Not Validated | Final asset model, roles, implementation, tests, and evidence remain open. |
+| `REQ-007` | ITSM and workflow-automation tasks in Phases 08 and 16 | Not Started | Not Validated | Platform access, workflow design, implementation, tests, and evidence remain open. |
+| `REQ-008` | Recovery-related DC, monitoring, CRM, and DR tasks in Phases 03, 07, 09, and 15 | Not Started | Not Validated | Recovery objectives, architecture, backups, restore tests, and evidence remain open. |
+| `REQ-009` | Onboarding workflow and automation tasks in Phases 08, 11, 12, and 16 | Not Started | Not Validated | Approved workflow, integrations, implementation, tests, and evidence remain open. |
+| `REQ-010` | Phase 00 governance plus documentation/test/evidence work across all implementation phases | In Progress | Not Validated | Actual controlled implementation records and requirement-level validation evidence remain incomplete. |
+| `REQ-011` | Phase 00 PlantUML foundation and architecture-update tasks across affected phases | In Progress | Not Validated | Conceptual diagrams are not yet validated against implemented state. |
+| `REQ-012` | IaC and applicable CI tasks in Phases 17–18 | Not Started | Not Validated | Cloud eligibility, decisions, implementation, tests, and evidence remain open. |
+
+### Corrections Made
+
+- Clarified in `docs/tasks.md` that the RTM's implementation-task mappings provide primary requirement traceability and that inline IDs are not mandatory or self-validating.
+- Recorded Issue #2 as active work without changing any requirement meaning, implementation status, or validation status.
+- Added this dated audit result so structural coverage and unresolved semantic gaps are distinguishable.
+
+### Unresolved Gaps Requiring Project-Owner Direction
+
+The roadmap authorizes several workstreams whose core purpose is not directly expressed by an approved functional/business requirement. Cross-cutting `REQ-010` and `REQ-011` govern documentation, testability, and architecture format but do not by themselves establish the business need for a technology. The clearest gaps are:
+
+- the general firewall, segmentation, routing, and network-foundation work in Phase 01 beyond the remote-access relationship in `REQ-003`;
+- the Linux platform introduced in Phase 05;
+- the Docker/container platform introduced in Phase 06;
+- CRM deployment and business operation in Phase 09, beyond CRM recovery coverage in `REQ-008`;
+- the email protocol lab in Phase 10; and
+- Kubernetes platform deployment in Phase 20, beyond Kubernetes observability coverage in `REQ-004`.
+
+These are traceability gaps, not authorization to add requirements or remove roadmap work. The project owner must decide whether existing requirements should be explicitly clarified, new requirements should be approved through governance, or particular work should be classified as an enabling dependency with documented business rationale. Until then, the affected task groups have roadmap phase ownership and cross-cutting governance coverage but incomplete direct business-requirement traceability.
+
+### Validation Conclusion
+
+Structural validation passed for task count, phase ownership/order, requirement-register integrity, RTM status separation, issue mappings, and artifact-template linkage. End-to-end task-to-business-requirement traceability did not fully pass because of the unresolved workstream gaps above. No requirement is Validated, and Issue #2 must remain In Progress pending project-owner direction and subsequent reconciliation.
+
 ## RTM Maintenance Process
 
 Update this RTM when:

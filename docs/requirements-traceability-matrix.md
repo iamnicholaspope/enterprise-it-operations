@@ -226,10 +226,10 @@ An implementation task marked `[x]` does not by itself validate a requirement. V
 - **Implementation task(s):** Phase 00 governance, ADR, testing/evidence/runbook/change/incident standards, traceability, and completion-workflow tasks; documentation/test/evidence tasks in every implementation phase in `docs/tasks.md`.
 - **Test ID(s):** TBD — governance/documentation conformance checks and phase-specific change validation tests have not been defined.
 - **Evidence reference(s):** Current governed documents demonstrate planning activity, but formal requirement-validation evidence is not yet captured.
-- **Runbook / operational documentation:** `changes/README.md`, `testing/README.md`, `evidence/README.md`, `runbooks/README.md`, and `incidents/README.md` define starter purposes only; detailed procedures/templates are TBD.
+- **Runbook / operational documentation:** `testing/README.md`, `evidence/README.md`, `runbooks/README.md`, `changes/README.md`, and `incidents/README.md` define reusable standards; their reserved `*-000-template.md` files provide templates without creating operational records.
 - **Current implementation status:** In Progress
 - **Validation status:** Not Validated
-- **Notes / gaps:** Git history is now available; detailed change/test/evidence procedures, traceability upkeep during implementation, implementation records, and requirement-validation evidence remain incomplete.
+- **Notes / gaps:** Git history and documentation frameworks are available; framework review, traceability upkeep during implementation, actual implementation/change/test/incident records, operationally validated runbooks, captured evidence, and requirement-validation evidence remain incomplete.
 
 ### REQ-011
 
@@ -271,9 +271,9 @@ An implementation task marked `[x]` does not by itself validate a requirement. V
 
 - No infrastructure requirement has been implemented.
 - No actual ADR exists; `ADR-000` is a template only.
-- No formal test IDs or test records exist.
+- No real test IDs or execution records exist; `TEST-000` is a reserved template only.
 - No requirement-validation evidence has been captured.
-- No detailed operational runbook exists; only directory-purpose README files and business-level process expectations are present.
+- No infrastructure-specific or operationally validated runbook exists; `RUN-000` is a reserved template and the directory standard is established.
 - The architecture library is conceptual and has not been validated against implemented state.
 - Git-backed history is available beginning with the authorized Phase 00 baseline commit.
 - Product, network, identity, remote-access, cloud, endpoint, monitoring, backup, and recovery decisions remain open in their designated phases.

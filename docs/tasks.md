@@ -19,17 +19,18 @@ Before marking an implementation task `[x]`, apply the master roadmap's Definiti
 - [x] Create risk register
 - [x] Create ADR template
 - [x] Create requirements traceability matrix
-- [ ] GitHub Repository Publication (`REQ-010`)
-  - [ ] Confirm repository publication safety
-  - [ ] Establish intended GitHub owner/account
-  - [ ] Authenticate GitHub tooling
-  - [ ] Create or connect the GitHub repository
-  - [ ] Configure `origin`
-  - [ ] Push `main`
-  - [ ] Verify local `HEAD` matches `origin/main`
-  - [ ] Verify repository visibility
-  - [ ] Verify the working tree remains clean
-  - [ ] Record repository URL and publication evidence
+- [x] GitHub Repository Publication (`REQ-010`)
+  - [x] Confirm repository publication safety
+  - [x] Establish intended GitHub owner/account
+  - [x] Authenticate GitHub tooling
+  - [x] Create or connect the GitHub repository
+  - [x] Configure `origin`
+  - [x] Push `main`
+  - [x] Verify local `HEAD` matches `origin/main`
+  - [x] Verify repository visibility
+  - [x] Verify the working tree remains clean
+  - [x] Record repository URL and publication evidence
+    - Evidence (2026-08-28): public repository `https://github.com/iamnicholaspope/enterprise-it-operations`; local `main` tracks `origin/main`; initial published baseline verified at commit `1b6677f2da6fa640f2a44076d3b0deeb8699f0da`.
 - [ ] Establish testing, evidence, runbook, change, and incident standards
 - [ ] Verify tasks can be traced to requirements
 - [ ] Create GitHub Project/Kanban board when explicitly authorized

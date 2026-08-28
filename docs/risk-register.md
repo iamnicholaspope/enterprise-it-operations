@@ -128,7 +128,7 @@ A rating may be adjusted only when the rationale is documented. No specific prob
 - **Contingency / response:** Use an approved alternative, document the unavailable capability accurately, revise optional scope through change control, and do not claim hands-on validation that did not occur.
 - **Owner role:** IT Manager
 - **Status:** Open
-- **Related requirement(s):** `REQ-005`, `REQ-007`, `REQ-010`
+- **Related requirement(s):** `REQ-005`, `REQ-007`, `REQ-010`, `REQ-014`
 - **Related phase(s):** Phases 08, 11, 12, 17, 19
 
 ### RISK-005 — Microsoft Cloud Licensing or Trial Unavailability
@@ -144,7 +144,7 @@ A rating may be adjusted only when the rationale is documented. No specific prob
 - **Contingency / response:** Use available vendor learning resources or approved alternatives, narrow the affected scenario, and formally document limitations without representing them as completed implementation.
 - **Owner role:** IT Manager
 - **Status:** Open
-- **Related requirement(s):** `REQ-001`, `REQ-003`, `REQ-005`, `REQ-009`
+- **Related requirement(s):** `REQ-001`, `REQ-003`, `REQ-005`, `REQ-009`, `REQ-014`
 - **Related phase(s):** Phases 11–14, 16
 
 ### RISK-006 — Citrix Licensing or Evaluation Unavailability
@@ -176,7 +176,7 @@ A rating may be adjusted only when the rationale is documented. No specific prob
 - **Contingency / response:** Stop or remove the exact approved resources using documented procedures, review charges, preserve necessary evidence, and record the event through change/incident processes as appropriate.
 - **Owner role:** Project Owner
 - **Status:** Open
-- **Related requirement(s):** `REQ-010`, `REQ-012`
+- **Related requirement(s):** `REQ-010`, `REQ-012`, `REQ-013`, `REQ-014`
 - **Related phase(s):** Phase 17
 
 ### RISK-008 — Accidental Public Exposure of Lab Services
@@ -224,7 +224,7 @@ A rating may be adjusted only when the rationale is documented. No specific prob
 - **Contingency / response:** Remove excess access, disable affected privileged paths, review activity, create an incident/change record where appropriate, correct group design, and retest authorization.
 - **Owner role:** IT Manager
 - **Status:** Open
-- **Related requirement(s):** `REQ-001`, `REQ-003`, `REQ-005`, `REQ-010`
+- **Related requirement(s):** `REQ-001`, `REQ-003`, `REQ-005`, `REQ-010`, `REQ-013`, `REQ-014`
 - **Related phase(s):** Phases 02–04, 08–14, 16–20
 
 ### RISK-011 — Firewall or Network Segmentation Misconfiguration
@@ -272,8 +272,8 @@ A rating may be adjusted only when the rationale is documented. No specific prob
 - **Contingency / response:** Use the best available valid copy or rebuild from documented configuration/IaC, record gaps, correct the backup design, and repeat restore testing.
 - **Owner role:** Systems Administrator
 - **Status:** Open
-- **Related requirement(s):** `REQ-008`, `REQ-010`
-- **Related phase(s):** Phases 15–18
+- **Related requirement(s):** `REQ-008`, `REQ-010`, `REQ-013`
+- **Related phase(s):** Phases 09, 15–18
 
 ### RISK-014 — Configuration Drift
 
@@ -288,7 +288,7 @@ A rating may be adjusted only when the rationale is documented. No specific prob
 - **Contingency / response:** Identify the authoritative state, reconcile or revert drift through an approved change, validate service and security behavior, and refresh evidence.
 - **Owner role:** Systems Administrator
 - **Status:** Open
-- **Related requirement(s):** `REQ-010`, `REQ-011`, `REQ-012`
+- **Related requirement(s):** `REQ-010`, `REQ-011`, `REQ-012`, `REQ-013`, `REQ-014`
 - **Related phase(s):** All implementation phases
 
 ### RISK-015 — Insufficient Monitoring, Alert Fatigue, or Ineffective Alerts
@@ -336,7 +336,7 @@ A rating may be adjusted only when the rationale is documented. No specific prob
 - **Contingency / response:** Pause dependent work, identify the authoritative source, reconcile documents, record the correction, and revalidate affected tests/evidence.
 - **Owner role:** IT Manager
 - **Status:** Open
-- **Related requirement(s):** `REQ-010`, `REQ-011`
+- **Related requirement(s):** `REQ-010`, `REQ-011`, `REQ-013`, `REQ-014`
 - **Related phase(s):** All phases
 
 ### RISK-018 — Scope Creep
@@ -400,7 +400,7 @@ A rating may be adjusted only when the rationale is documented. No specific prob
 - **Contingency / response:** Restore from available copies, reconstruct from systems and documentation, record missing evidence honestly, and repeat tests where possible.
 - **Owner role:** Systems Administrator
 - **Status:** Open
-- **Related requirement(s):** `REQ-008`, `REQ-010`, `REQ-011`
+- **Related requirement(s):** `REQ-008`, `REQ-010`, `REQ-011`, `REQ-013`, `REQ-014`
 - **Related phase(s):** Phase 00 and all implementation phases
 
 ### RISK-022 — Intentionally Broken Test Scenario Leaves Residual Vulnerability

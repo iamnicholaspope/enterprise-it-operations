@@ -151,6 +151,10 @@ architecture/
 
 # PHASE 01 --- Virtualization & Network Design
 
+## Governance Classification
+
+General networking, routing, segmentation, and firewall capability are **enabling dependencies** for centralized services, secure remote access, monitoring, endpoint/security controls, and hybrid/cloud integration. No vendor, VLAN scheme, or IP plan is a business requirement; those remain later architecture decisions.
+
 ## Objective
 
 Create the infrastructure foundation on which all other systems depend.
@@ -290,6 +294,10 @@ gateway configuration. Document diagnosis and recovery.
 
 # PHASE 05 --- Linux Foundation
 
+## Governance Classification
+
+Linux is an **enabling platform / learning objective**, not a mandatory business requirement. Deploy it only as the roadmap learning foundation or where a later approved service/architecture justifies it.
+
 ## Objective
 
 Introduce Linux systems administration.
@@ -310,6 +318,10 @@ behavior.
 ------------------------------------------------------------------------
 
 # PHASE 06 --- Docker & Docker Compose
+
+## Governance Classification
+
+Docker and containerization are an **enabling platform / learning objective**, not a mandatory business requirement. Container workloads must be tied to approved services and later architecture decisions.
 
 ## Objective
 
@@ -399,6 +411,10 @@ Eventually: `Prometheus → Alertmanager → ServiceNow → Incident`.
 
 # PHASE 09 --- CRM
 
+## Governance Classification
+
+Centralized customer and sales relationship management is a **business capability** under `REQ-013`. SuiteCRM is a proposed implementation option and is not prescribed by the requirement.
+
 ## Objective
 
 Implement a business application supporting revenue/customer operations.
@@ -425,6 +441,10 @@ APIs, and automation.
 
 # PHASE 10 --- Email Protocol Lab
 
+## Governance Classification
+
+This phase is a **learning / enabling workstream** for messaging protocols. It is not the required production messaging solution and does not mandate Postfix, Dovecot, SMTP, IMAP, POP3, or self-hosted email. An approved architecture in a later applicable phase may satisfy `REQ-014` through Microsoft 365/Exchange Online or another justified platform, subject to licensing.
+
 ## Objective
 
 Understand traditional enterprise email infrastructure and protocols.
@@ -446,6 +466,10 @@ SMTP/POP3 publicly.
 ------------------------------------------------------------------------
 
 # PHASE 11 --- Microsoft Cloud Identity
+
+## Governance Classification
+
+Microsoft cloud identity is an enabling architecture for approved identity, access, endpoint, and communication outcomes where licensing permits. If Microsoft 365 messaging is selected later, it may satisfy `REQ-014`; this roadmap does not pre-approve that product or license.
 
 ## Objective
 
@@ -651,6 +675,10 @@ resources.
 ------------------------------------------------------------------------
 
 # PHASE 20 --- Kubernetes
+
+## Governance Classification
+
+Kubernetes is a **conditional / advanced learning platform**, not a mandatory business requirement. Execute this phase only after prerequisite container skills are complete and an appropriate workload/use case and architecture are approved. Its absence does not by itself fail a mandatory business requirement.
 
 ## Objective
 

@@ -14,6 +14,19 @@
 | REQ-010 | Infrastructure changes must be documented and testable | Must | In Progress |
 | REQ-011 | Architecture must be documented in PlantUML | Must | In Progress |
 | REQ-012 | Cloud resources should be provisioned with IaC where practical | Should | Planned |
+| REQ-013 | The business must centrally manage customer, account, contact, and sales-opportunity information with role-appropriate access | Must | Planned |
+| REQ-014 | Employees must have an organization-managed business messaging and communication capability with role-appropriate access | Must | Planned |
+
+## Requirement and Technology Classification
+
+Requirements describe business or system outcomes. They do not mandate a product merely because a technology appears in the roadmap.
+
+- An **enabling dependency** supplies infrastructure needed by one or more requirements but is not itself a business outcome. General networking, routing, segmentation, and firewall capability are enabling dependencies; products, VLANs, and addressing remain architecture decisions.
+- An **enabling platform / learning objective** may host or inform approved services while also developing portfolio capability. Linux and Docker are not mandatory business requirements and require later workload justification.
+- A **learning / enabling workstream** develops transferable operational knowledge without defining the production solution. The Phase 10 email protocol lab does not require self-hosted email and does not by itself satisfy `REQ-014`.
+- A **conditional / advanced learning platform** proceeds only after prerequisites and an appropriate workload/use case are justified. Kubernetes is not a mandatory business outcome, and omitting it does not fail the simulated company's mandatory requirements.
+
+CRM and business messaging are approved business capabilities under `REQ-013` and `REQ-014`. Their platforms remain unresolved architecture/licensing decisions.
 
 ## Traceability Standard
 

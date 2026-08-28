@@ -267,6 +267,42 @@ An implementation task marked `[x]` does not by itself validate a requirement. V
 - **Validation status:** Not Validated
 - **Notes / gaps:** Cloud eligibility, approved account/subscription, cost controls, tooling, state design, architecture decision, implementation, CI, tests, and evidence remain open.
 
+### REQ-013
+
+- **Requirement ID:** `REQ-013`
+- **Requirement summary:** The business must centrally manage customer, account, contact, and sales-opportunity information with role-appropriate access
+- **Business rationale / business need:** NRS provides equipment, implementation, and support services to business customers. Sales needs a shared source for relationship and opportunity activity; selected Customer Service, Marketing, and management roles may need appropriate access without receiving unrestricted permissions.
+- **Source document:** `docs/requirements.md` (authoritative); supported by `docs/business-profile.md` §§4, 9, 13, 16, 18, and 30 and `docs/project-charter.md` §§2, 7, 9, and 10.
+- **Related project phase(s):** Phase 09 — CRM; supporting identity/security integration in Phases 11 and 14; recovery in Phase 15; approved automation in Phase 16.
+- **Related architecture diagram(s):** `architecture/diagrams/01-overview/01-enterprise-overview.puml`; `architecture/diagrams/09-applications/01-business-applications.puml`; `architecture/diagrams/10-backup-dr/01-backup-dr.puml` for planned CRM recovery context.
+- **Related ADR(s):** None yet / TBD if CRM platform, hosting, identity, data, integration, or recovery architecture requires a decision.
+- **Related risk(s):** `RISK-009`, `RISK-010`, `RISK-013`, `RISK-014`, `RISK-017`, `RISK-021`.
+- **Implementation task(s):** Phase 09 CRM data, role/access, workflow, reporting, integration, testing, and evidence tasks; applicable Phase 11 identity, Phase 14 security, Phase 15 recovery, and Phase 16 automation tasks in `docs/tasks.md`.
+- **Test ID(s):** TBD — role/access, customer/account/contact/opportunity workflow, reporting, integration, security, and recovery tests to be defined during applicable phases.
+- **Evidence reference(s):** Not yet captured.
+- **Runbook / operational documentation:** None yet; CRM administration, access, support, backup/recovery, and lifecycle procedures are TBD.
+- **Current implementation status:** Not Started
+- **Validation status:** Not Validated
+- **Notes / gaps:** Platform/hosting, licensing, architecture, final access model, synthetic business-data model, integrations, implementation, tests, evidence, and runbooks remain open. The requirement is vendor-neutral; SuiteCRM remains a roadmap option.
+
+### REQ-014
+
+- **Requirement ID:** `REQ-014`
+- **Requirement summary:** Employees must have an organization-managed business messaging and communication capability with role-appropriate access
+- **Business rationale / business need:** A centralized hybrid workforce needs an organization-managed way to communicate for business operations while access, identity, licensing, and security remain governed. This outcome is distinct from the internal protocol-learning lab.
+- **Source document:** `docs/requirements.md` (authoritative); supported by the 26-person office/remote operating model in `docs/project-charter.md` §§2, 7, and 9 and `docs/business-profile.md` §§5, 8, 11, 15, 16, and 30. `docs/business-profile.md` §16 explicitly states that lab email is not the production business email platform.
+- **Related project phase(s):** Phase 11 — Microsoft Cloud Identity where eligible and an approved messaging capability is selected; supporting security in Phase 14 and automation in Phase 16. Phase 10 — Email Protocol Lab is learning/enabling work and does not by itself satisfy this requirement.
+- **Related architecture diagram(s):** `architecture/diagrams/01-overview/01-enterprise-overview.puml`; `architecture/diagrams/05-cloud/01-hybrid-cloud.puml`; `architecture/diagrams/09-applications/01-business-applications.puml`. These are conceptual and do not approve a messaging platform.
+- **Related ADR(s):** None yet / TBD if messaging platform, identity, domain, licensing, security, or integration architecture requires a decision.
+- **Related risk(s):** `RISK-004`, `RISK-005`, `RISK-009`, `RISK-010`, `RISK-014`, `RISK-017`, `RISK-021`.
+- **Implementation task(s):** Phase 11 approved organization-managed messaging capability, eligibility/licensing, identity/access, and evidence tasks; applicable Phase 14 security and Phase 16 lifecycle/automation tasks in `docs/tasks.md`. Phase 10 tasks provide protocol learning only.
+- **Test ID(s):** TBD — authorized access, sending/receiving or equivalent communication workflow, identity/security, account disablement, and applicable integration tests to be defined after platform approval.
+- **Evidence reference(s):** Not yet captured.
+- **Runbook / operational documentation:** None yet; account/access, messaging administration, troubleshooting, security, lifecycle, and continuity procedures are TBD.
+- **Current implementation status:** Not Started
+- **Validation status:** Not Validated
+- **Notes / gaps:** Platform, licensing, domain/addressing, architecture, security, retention/continuity expectations, implementation, tests, evidence, and runbooks remain open. No self-hosted mail stack or Microsoft product is required by this requirement.
+
 ## Major Traceability Gaps at Baseline
 
 - No infrastructure requirement has been implemented.
@@ -282,14 +318,14 @@ An implementation task marked `[x]` does not by itself validate a requirement. V
 
 ### Scope Audited
 
-The audit reviewed all 161 finite checkbox tasks in `docs/tasks.md`, all authoritative roadmap phases, REQ-001 through REQ-012, the RTM implementation-task mappings, GitHub Issues #1–#3, and the approved testing, evidence, runbook, change, and incident standards. This was a coverage and consistency audit, not implementation or requirement validation.
+The initial audit reviewed 161 finite checkbox tasks and REQ-001 through REQ-012. After the approved requirements-governance reconciliation, the rerun reviewed all 162 tasks, all authoritative roadmap phases, REQ-001 through REQ-014, the RTM implementation-task mappings, GitHub Issues #1–#3, and the approved testing, evidence, runbook, change, and incident standards. This was a coverage and consistency audit, not implementation or requirement validation.
 
 ### Coverage Result
 
-- All 161 tasks are owned by exactly one Phase 00–20 section.
+- All 162 tasks are owned by exactly one Phase 00–20 section.
 - All 21 phase numbers and names appear once, in authoritative roadmap order, with no missing or unauthorized phase.
 - Major roadmap work has task coverage in its corresponding phase. This confirms planned coverage only.
-- REQ-001 through REQ-012 appear exactly once in `docs/requirements.md` and exactly once as RTM records.
+- REQ-001 through REQ-014 appear exactly once in `docs/requirements.md` and exactly once as RTM records; existing REQ-001 through REQ-012 retained their IDs and wording.
 - Every requirement has planned implementation-task coverage, a future test/evidence expectation, and an explicit implementation and validation status in this RTM.
 - Issue #1 maps to the completed standards task and is closed/DONE; Issue #2 maps to the current audit task; Issue #3 maps to future Phase 00 completion validation. No future implementation issue was created by this audit.
 - The approved `TEST-000`, `EVID-000`, `RUN-000`, `CHG-000`, and `INC-000` templates support future links to requirements, risks, phases, ADRs, GitHub issues, tests, evidence, runbooks, changes, and incidents without representing real records.
@@ -312,29 +348,32 @@ The task register does not require every checkbox to repeat requirement IDs inli
 | `REQ-010` | Phase 00 governance plus documentation/test/evidence work across all implementation phases | In Progress | Not Validated | Actual controlled implementation records and requirement-level validation evidence remain incomplete. |
 | `REQ-011` | Phase 00 PlantUML foundation and architecture-update tasks across affected phases | In Progress | Not Validated | Conceptual diagrams are not yet validated against implemented state. |
 | `REQ-012` | IaC and applicable CI tasks in Phases 17–18 | Not Started | Not Validated | Cloud eligibility, decisions, implementation, tests, and evidence remain open. |
+| `REQ-013` | CRM capability, access, workflow, integration, security, recovery, and automation tasks in Phases 09, 11, and 14–16 | Not Started | Not Validated | Platform, architecture, access model, implementation, tests, evidence, and runbooks remain open. |
+| `REQ-014` | Approved business messaging, identity/access, security, and lifecycle tasks in Phases 11, 14, and 16 | Not Started | Not Validated | Platform/licensing, architecture, implementation, tests, evidence, and runbooks remain open; Phase 10 is learning only. |
 
 ### Corrections Made
 
 - Clarified in `docs/tasks.md` that the RTM's implementation-task mappings provide primary requirement traceability and that inline IDs are not mandatory or self-validating.
 - Recorded Issue #2 as active work without changing any requirement meaning, implementation status, or validation status.
 - Added this dated audit result so structural coverage and unresolved semantic gaps are distinguishable.
+- Added vendor-neutral `REQ-013` for centralized CRM capability and `REQ-014` for organization-managed business messaging.
+- Classified the Phase 01 network foundation as an enabling dependency; Phases 05–06 as enabling platforms/learning objectives; Phase 10 as a learning/enabling workstream; and Phase 20 as a conditional advanced learning platform.
+- Added explicit `REQ-013` Phase 09 task coverage and a vendor-neutral `REQ-014` Phase 11 task without selecting or deploying a product.
 
-### Unresolved Gaps Requiring Project-Owner Direction
+### Workstream Classification Resolution
 
-The roadmap authorizes several workstreams whose core purpose is not directly expressed by an approved functional/business requirement. Cross-cutting `REQ-010` and `REQ-011` govern documentation, testability, and architecture format but do not by themselves establish the business need for a technology. The clearest gaps are:
+- **Phase 01 network/firewall foundation — Enabling dependency:** Supports centralized services, `REQ-003`, `REQ-004`, endpoint/security controls, hybrid integration, and cross-cutting `REQ-010`/`REQ-011`; it does not mandate a vendor, VLAN, or address plan.
+- **Phase 05 Linux — Enabling platform / learning objective:** May host an approved service later but is not a mandatory business outcome.
+- **Phase 06 Docker — Enabling platform / learning objective:** May operate approved services later but is not a mandatory business outcome.
+- **Phase 09 CRM — Business requirement:** `REQ-013` now defines the vendor-neutral customer/sales relationship outcome; SuiteCRM remains an implementation option.
+- **Phase 10 email protocol lab — Learning / enabling workstream:** Does not prescribe or satisfy the production messaging outcome by itself. `REQ-014` defines the vendor-neutral business capability, which may be implemented in an approved later architecture.
+- **Phase 20 Kubernetes — Conditional / advanced learning platform:** Requires prerequisite skills and an approved workload/use case; absence does not fail a mandatory business requirement.
 
-- the general firewall, segmentation, routing, and network-foundation work in Phase 01 beyond the remote-access relationship in `REQ-003`;
-- the Linux platform introduced in Phase 05;
-- the Docker/container platform introduced in Phase 06;
-- CRM deployment and business operation in Phase 09, beyond CRM recovery coverage in `REQ-008`;
-- the email protocol lab in Phase 10; and
-- Kubernetes platform deployment in Phase 20, beyond Kubernetes observability coverage in `REQ-004`.
-
-These are traceability gaps, not authorization to add requirements or remove roadmap work. The project owner must decide whether existing requirements should be explicitly clarified, new requirements should be approved through governance, or particular work should be classified as an enabling dependency with documented business rationale. Until then, the affected task groups have roadmap phase ownership and cross-cutting governance coverage but incomplete direct business-requirement traceability.
+The remaining gaps are normal future architecture, licensing, implementation, testing, evidence, and operational-documentation work already exposed in each requirement record. No unresolved classification gap remains from the Issue #2 audit.
 
 ### Validation Conclusion
 
-Structural validation passed for task count, phase ownership/order, requirement-register integrity, RTM status separation, issue mappings, and artifact-template linkage. End-to-end task-to-business-requirement traceability did not fully pass because of the unresolved workstream gaps above. No requirement is Validated, and Issue #2 must remain In Progress pending project-owner direction and subsequent reconciliation.
+The reconciliation audit passed for task count, phase ownership/order, stable and sequential requirement IDs, business-versus-technology classification, requirement-to-task coverage, RTM status separation, issue mappings, and artifact-template linkage. No product was converted into a business requirement, no requirement is Validated, and no Phase 01 implementation began. Issue #2 is ready for project-owner review in Testing.
 
 ## RTM Maintenance Process
 

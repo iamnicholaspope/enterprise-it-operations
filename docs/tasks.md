@@ -20,7 +20,7 @@ Requirement relationships are maintained primarily in `docs/requirements-traceab
 - [x] Initialize Git repository when explicitly authorized
 - [x] Create project charter
 - [x] Create detailed business profile
-- [ ] Review and approve requirements register
+- [~] Review and approve requirements register
 - [ ] Maintain authoritative master build roadmap
 - [x] Create risk register
 - [x] Create ADR template
@@ -47,6 +47,8 @@ Requirement relationships are maintained primarily in `docs/requirements-traceab
 - [ ] Validate Phase 00 completion criteria ([Issue #3](https://github.com/iamnicholaspope/enterprise-it-operations/issues/3))
 
 ## Phase 01 — Virtualization & Network Design
+
+> **Classification:** Enabling dependency supporting centralized services, secure remote access (`REQ-003`), monitoring (`REQ-004`), endpoint/security controls, hybrid integration, and cross-cutting `REQ-010`/`REQ-011`. Products, VLANs, and addresses remain later architecture decisions.
 
 - [ ] Document virtualization requirements and constraints
 - [ ] Select and document hypervisor platform
@@ -97,6 +99,8 @@ Requirement relationships are maintained primarily in `docs/requirements-traceab
 
 ## Phase 05 — Linux Foundation
 
+> **Classification:** Enabling platform / learning objective. Linux is not a mandatory business requirement; use must be justified by an approved hosted service or implementation design.
+
 - [ ] Select a suitable free Linux distribution and deploy `LINUX01`
 - [ ] Configure SSH, users/groups, permissions, and sudo
 - [ ] Practice systemd, packages, networking, logs, and scheduled tasks
@@ -105,6 +109,8 @@ Requirement relationships are maintained primarily in `docs/requirements-traceab
 - [ ] Record architecture, configuration, tests, and sanitized evidence
 
 ## Phase 06 — Docker & Docker Compose
+
+> **Classification:** Enabling platform / learning objective. Containerization is not a mandatory business requirement; use must be justified by an approved service and architecture.
 
 - [ ] Install and configure Docker
 - [ ] Build and run approved container workloads
@@ -136,14 +142,18 @@ Requirement relationships are maintained primarily in `docs/requirements-traceab
 
 ## Phase 09 — CRM
 
+> **Classification:** Business-capability implementation phase for `REQ-013`; SuiteCRM remains a proposed implementation option rather than a requirement.
+
 - [ ] Deploy SuiteCRM as the primary free CRM option
-- [ ] Configure users, roles, permissions, accounts, contacts, leads, and opportunities
+- [ ] Configure users, roles, permissions, accounts, contacts, leads, and opportunities (`REQ-013`)
 - [ ] Configure reports and dashboards
 - [ ] Validate the lead-to-sale workflow
 - [ ] Integrate email, monitoring, CMDB, authentication, APIs, and automation where appropriate
 - [ ] Record architecture, configuration, tests, and sanitized evidence
 
 ## Phase 10 — Email Protocol Lab
+
+> **Classification:** Learning / enabling workstream. The internal protocol lab does not require self-hosted production email and does not by itself satisfy the vendor-neutral messaging outcome in `REQ-014`.
 
 - [ ] Design an internal-only email protocol lab
 - [ ] Deploy an approved stack such as Postfix and Dovecot
@@ -156,6 +166,7 @@ Requirement relationships are maintained primarily in `docs/requirements-traceab
 
 - [ ] Confirm Microsoft developer/trial eligibility and licensing constraints
 - [ ] Configure Microsoft 365 and Entra ID where eligible
+- [ ] Define and test an approved organization-managed business messaging capability where licensing permits (`REQ-014`)
 - [ ] Configure and test users, groups, SSO, MFA, RBAC, and identity lifecycle
 - [ ] Document hybrid identity concepts and on-premises AD relationship
 - [ ] Record architecture, configuration, tests, and sanitized evidence
@@ -240,6 +251,8 @@ Requirement relationships are maintained primarily in `docs/requirements-traceab
 - [ ] Record architecture, licensing, configuration, tests, and sanitized evidence
 
 ## Phase 20 — Kubernetes
+
+> **Classification:** Conditional / advanced learning platform. Proceed only after prerequisite container skills and an appropriate approved workload/use case are demonstrated; Kubernetes is not a mandatory business outcome.
 
 - [ ] Verify Linux, Docker, Compose, networking, storage, TLS, observability, and troubleshooting prerequisites
 - [ ] Define an approved Kubernetes architecture and use case

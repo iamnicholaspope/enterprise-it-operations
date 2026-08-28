@@ -6,6 +6,10 @@
 
 Before marking an implementation task `[x]`, apply the master roadmap's Definition of Done: document configuration and security considerations, record testing and failure testing where applicable, capture sanitized evidence, update PlantUML and runbooks when affected, update requirement traceability, and commit relevant Git changes when Git is available and authorized.
 
+## Project-Management Convention
+
+The GitHub Project is the visual workflow for GitHub Issues, which are executable work items. This file remains the repository-controlled task and governance register. `docs/master-build-roadmap.md` remains authoritative for phase order and dependencies, `docs/requirements.md` remains authoritative for requirements, and `docs/requirements-traceability-matrix.md` records requirement traceability. GitHub Project fields, views, and issue states must reflect these sources rather than replace or reinterpret them.
+
 ## Phase 00 — Project Governance
 
 - [x] Create initial `architecture/diagrams/` structure
@@ -33,7 +37,8 @@ Before marking an implementation task `[x]`, apply the master roadmap's Definiti
     - Evidence (2026-08-28): public repository `https://github.com/iamnicholaspope/enterprise-it-operations`; local `main` tracks `origin/main`; initial published baseline verified at commit `1b6677f2da6fa640f2a44076d3b0deeb8699f0da`.
 - [ ] Establish testing, evidence, runbook, change, and incident standards
 - [ ] Verify tasks can be traced to requirements
-- [ ] Create GitHub Project/Kanban board when explicitly authorized
+- [x] Create GitHub Project/Kanban board when explicitly authorized
+  - Evidence (2026-08-28): public user project `Enterprise IT Operations Lab` (`https://github.com/users/iamnicholaspope/projects/1`) is linked to the repository; Status uses `BACKLOG`, `READY`, `IN PROGRESS`, `TESTING`, and `DONE`; Phase, Requirement, Priority, and Work Type fields and Kanban, Phase Plan, and Current Work views were verified with zero project items.
 - [ ] Create initial milestone structure
 - [ ] Validate Phase 00 completion criteria
 

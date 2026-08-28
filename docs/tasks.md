@@ -35,12 +35,13 @@ The GitHub Project is the visual workflow for GitHub Issues, which are executabl
   - [x] Verify the working tree remains clean
   - [x] Record repository URL and publication evidence
     - Evidence (2026-08-28): public repository `https://github.com/iamnicholaspope/enterprise-it-operations`; local `main` tracks `origin/main`; initial published baseline verified at commit `1b6677f2da6fa640f2a44076d3b0deeb8699f0da`.
-- [ ] Establish testing, evidence, runbook, change, and incident standards
-- [ ] Verify tasks can be traced to requirements
+- [ ] Establish testing, evidence, runbook, change, and incident standards ([Issue #1](https://github.com/iamnicholaspope/enterprise-it-operations/issues/1))
+- [ ] Verify tasks can be traced to requirements ([Issue #2](https://github.com/iamnicholaspope/enterprise-it-operations/issues/2))
 - [x] Create GitHub Project/Kanban board when explicitly authorized
   - Evidence (2026-08-28): public user project `Enterprise IT Operations Lab` (`https://github.com/users/iamnicholaspope/projects/1`) is linked to the repository; Status uses `BACKLOG`, `READY`, `IN PROGRESS`, `TESTING`, and `DONE`; Phase, Requirement, Priority, and Work Type fields and Kanban, Phase Plan, and Current Work views were verified with zero project items.
-- [ ] Create initial milestone structure
-- [ ] Validate Phase 00 completion criteria
+- [x] Create initial milestone structure
+  - Evidence (2026-08-28): GitHub milestones `Phase 00` through `Phase 20` use the authoritative roadmap phase names and have no due dates.
+- [ ] Validate Phase 00 completion criteria ([Issue #3](https://github.com/iamnicholaspope/enterprise-it-operations/issues/3))
 
 ## Phase 01 — Virtualization & Network Design
 

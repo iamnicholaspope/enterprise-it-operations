@@ -1,6 +1,6 @@
 # Architecture Decision Records
 
-> **Baseline approval:** The project owner approved this ADR framework and `ADR-000-template.md` as the current Phase 00 baseline on 2026-08-28. The ADR-framework task remains `[~]` until all applicable Definition of Done evidence, including Git-backed change history, is available.
+> **Baseline approval:** The project owner approved this ADR framework and `ADR-000-template.md` as the current Phase 00 baseline on 2026-08-28. Git-backed baseline evidence begins with commit `b52bfc18c728e29fe466fc493958d35e49313909`.
 
 This directory contains Architecture Decision Records (ADRs) for significant technical and design choices in the Enterprise IT Operations Lab.
 

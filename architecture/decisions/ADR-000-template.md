@@ -2,7 +2,7 @@
 
 > **Template notice:** ADR-000 is reserved for this template. It is not an architecture decision. Copy this file, assign the next unused ADR ID, replace every bracketed instruction, and remove this notice.
 
-> **Template baseline approval:** The project owner approved this template as part of the current Phase 00 ADR-framework baseline on 2026-08-28. This approval does not approve any architecture choice.
+> **Template baseline approval:** The project owner approved this template as part of the current Phase 00 ADR-framework baseline on 2026-08-28. Git-backed baseline evidence begins with commit `b52bfc18c728e29fe466fc493958d35e49313909`. This approval does not approve any architecture choice.
 
 ## Metadata
 

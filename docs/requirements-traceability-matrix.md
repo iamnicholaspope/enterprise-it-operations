@@ -1,6 +1,6 @@
 # Requirements Traceability Matrix
 
-> **Baseline approval:** The project owner approved this document as the current Phase 00 traceability baseline on 2026-08-28. Its task remains `[~]` until all applicable Definition of Done requirements are satisfied.
+> **Baseline approval:** The project owner approved this document as the current Phase 00 traceability baseline on 2026-08-28. Git-backed baseline evidence begins with commit `b52bfc18c728e29fe466fc493958d35e49313909`.
 
 ## Purpose
 
@@ -229,7 +229,7 @@ An implementation task marked `[x]` does not by itself validate a requirement. V
 - **Runbook / operational documentation:** `changes/README.md`, `testing/README.md`, `evidence/README.md`, `runbooks/README.md`, and `incidents/README.md` define starter purposes only; detailed procedures/templates are TBD.
 - **Current implementation status:** In Progress
 - **Validation status:** Not Validated
-- **Notes / gaps:** Git history is unavailable; change/test/evidence procedures, traceability upkeep, implementation records, and validation evidence remain incomplete.
+- **Notes / gaps:** Git history is now available; detailed change/test/evidence procedures, traceability upkeep during implementation, implementation records, and requirement-validation evidence remain incomplete.
 
 ### REQ-011
 
@@ -247,7 +247,7 @@ An implementation task marked `[x]` does not by itself validate a requirement. V
 - **Runbook / operational documentation:** `architecture/README.md` and `architecture/diagrams/README.md`; no diagram maintenance/runbook procedure beyond current guidance.
 - **Current implementation status:** In Progress
 - **Validation status:** Not Validated
-- **Notes / gaps:** Diagrams are conceptual and may contain proposals; rendering evidence, accepted ADR linkage, current-state verification, and Git-backed history are absent.
+- **Notes / gaps:** Diagrams are conceptual and may contain proposals; rendering evidence, accepted ADR linkage, and implemented-current-state verification are absent. Git-backed history is now available.
 
 ### REQ-012
 
@@ -275,7 +275,7 @@ An implementation task marked `[x]` does not by itself validate a requirement. V
 - No requirement-validation evidence has been captured.
 - No detailed operational runbook exists; only directory-purpose README files and business-level process expectations are present.
 - The architecture library is conceptual and has not been validated against implemented state.
-- Git-backed history is unavailable.
+- Git-backed history is available beginning with the authorized Phase 00 baseline commit.
 - Product, network, identity, remote-access, cloud, endpoint, monitoring, backup, and recovery decisions remain open in their designated phases.
 
 ## RTM Maintenance Process

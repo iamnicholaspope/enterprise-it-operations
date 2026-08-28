@@ -1,6 +1,6 @@
 # Project Risk Register
 
-> **Baseline approval:** The project owner approved this document as the current Phase 00 risk baseline on 2026-08-28. Its task remains `[~]` until all applicable Definition of Done evidence, including Git-backed change history, is available.
+> **Baseline approval:** The project owner approved this document as the current Phase 00 risk baseline on 2026-08-28. Git-backed baseline evidence begins with commit `b52bfc18c728e29fe466fc493958d35e49313909`.
 
 ## Purpose and Scope
 
@@ -455,7 +455,7 @@ A rating may be adjusted only when the rationale is documented. No specific prob
 - A single primary lab operator may perform several role-based responsibilities even though NRS models a three-person IT department.
 - Qualitative ratings describe planning priority and are not statistical forecasts.
 - Optional capabilities may be deferred or omitted with project-owner approval when their absence does not prevent mandatory requirements.
-- Git-backed version history will become available only after Git initialization is explicitly authorized.
+- Git-backed version history is available from the authorized Phase 00 repository initialization onward.
 
 ## Unresolved Decisions Affecting Risk Treatment
 

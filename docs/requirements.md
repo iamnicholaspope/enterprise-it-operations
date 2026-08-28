@@ -11,7 +11,7 @@
 | REQ-007 | IT must manage incidents, problems, changes, and requests | Must | Planned |
 | REQ-008 | Critical systems must be backed up and tested for recovery | Must | Planned |
 | REQ-009 | New employee onboarding should be automated where practical | Should | Planned |
-| REQ-010 | Infrastructure changes must be documented and testable | Must | Planned |
+| REQ-010 | Infrastructure changes must be documented and testable | Must | In Progress |
 | REQ-011 | Architecture must be documented in PlantUML | Must | In Progress |
 | REQ-012 | Cloud resources should be provisioned with IaC where practical | Should | Planned |
 

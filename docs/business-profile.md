@@ -1,6 +1,6 @@
 # Northstar Ridge Solutions, LLC — Business Profile
 
-> **Baseline approval:** The project owner approved this document as the current Phase 00 content baseline on 2026-08-28. Its task remains `[~]` until all applicable Definition of Done evidence, including Git-backed change history, is available.
+> **Baseline approval:** The project owner approved this document as the current Phase 00 content baseline on 2026-08-28. Git-backed baseline evidence begins with commit `b52bfc18c728e29fe466fc493958d35e49313909`.
 
 ## 1. Document Purpose
 

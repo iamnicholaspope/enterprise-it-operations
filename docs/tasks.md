@@ -11,14 +11,14 @@ Before marking an implementation task `[x]`, apply the master roadmap's Definiti
 - [x] Create initial `architecture/diagrams/` structure
 - [x] Establish PlantUML as the diagramming standard
 - [x] Create AI project instruction structure
-- [~] Initialize Git repository when explicitly authorized
-- [~] Create project charter
-- [~] Create detailed business profile
+- [x] Initialize Git repository when explicitly authorized
+- [x] Create project charter
+- [x] Create detailed business profile
 - [ ] Review and approve requirements register
 - [ ] Maintain authoritative master build roadmap
-- [~] Create risk register
-- [~] Create ADR template
-- [~] Create requirements traceability matrix
+- [x] Create risk register
+- [x] Create ADR template
+- [x] Create requirements traceability matrix
 - [ ] Establish testing, evidence, runbook, change, and incident standards
 - [ ] Verify tasks can be traced to requirements
 - [ ] Create GitHub Project/Kanban board when explicitly authorized
